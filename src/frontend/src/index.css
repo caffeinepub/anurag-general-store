@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700;900&family=Figtree:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm saffron / Indian spice theme */
+    --background: 0.98 0.01 80;
+    --foreground: 0.18 0.04 45;
+
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.04 45;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.04 45;
+
+    /* Saffron orange primary */
+    --primary: 0.68 0.18 55;
+    --primary-foreground: 1 0 0;
+
+    /* Warm cream secondary */
+    --secondary: 0.94 0.04 80;
+    --secondary-foreground: 0.3 0.06 50;
+
+    --muted: 0.94 0.02 80;
+    --muted-foreground: 0.52 0.04 60;
+
+    /* Turmeric accent */
+    --accent: 0.88 0.12 80;
+    --accent-foreground: 0.25 0.06 50;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 1 0 0;
+
+    --border: 0.88 0.04 70;
+    --input: 0.88 0.04 70;
+    --ring: 0.68 0.18 55;
+
+    --radius: 0.75rem;
+
+    /* Chart colors */
+    --chart-1: 0.68 0.18 55;
+    --chart-2: 0.62 0.16 140;
+    --chart-3: 0.55 0.14 220;
+    --chart-4: 0.72 0.14 340;
+    --chart-5: 0.78 0.12 90;
+
+    /* Sidebar */
+    --sidebar: 0.96 0.02 70;
+    --sidebar-foreground: 0.18 0.04 45;
+    --sidebar-primary: 0.68 0.18 55;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.92 0.06 75;
+    --sidebar-accent-foreground: 0.25 0.06 50;
+    --sidebar-border: 0.88 0.04 70;
+    --sidebar-ring: 0.68 0.18 55;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
